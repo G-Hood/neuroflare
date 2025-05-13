@@ -58,6 +58,13 @@ export default function Header() {
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
+              About
+            </Link>
+            <Link
+              href="/#contact"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Research
             </Link>
             <Link
@@ -76,13 +83,6 @@ export default function Header() {
             </Link>
             <Link
               href="/#about"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/#contact"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
