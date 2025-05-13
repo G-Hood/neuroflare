@@ -17,7 +17,7 @@ export default function Header() {
               <div className="h-6 w-6 rounded-full bg-primary soft-glow" />
             </div>
           </div>
-          <span className="text-xl font-bold">TechForward</span>
+          <span className="text-xl font-bold">NeuroFlare</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
