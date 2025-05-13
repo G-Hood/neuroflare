@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Header />
             {children}
-            <Analytics />
+            <Analytics mode="production"/>
             <Footer />
           </div>
         </ThemeProvider>

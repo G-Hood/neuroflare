@@ -35,9 +35,9 @@ body {
 .rainbow-text {
   background: linear-gradient(
     to right,
-    #4169e1 /* Royal Blue */,
+    #1125e1 /* Royal Blue */,
     #00bfff /* Deep Sky Blue */,
-    #00ffff /* Cyan */,
+    #00dfff /* Cyan */,
     #40e0d0 /* Turquoise */,
     #48d1cc /* Medium Turquoise */,
     #9370db /* Medium Purple */,
