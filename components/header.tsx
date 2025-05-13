@@ -29,6 +29,9 @@ export default function Header() {
           <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
             Products
           </Link>
+          <Link href="/research" className="text-sm font-medium hover:text-primary transition-colors">
+            Research
+          </Link>
           <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
             About
           </Link>
@@ -73,6 +76,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Products
+            </Link>
+            <Link
+              href="/research"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Research
             </Link>
             <Link
               href="/#about"

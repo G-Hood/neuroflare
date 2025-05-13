@@ -1,7 +1,7 @@
 import { Book, BookOpen, FileText, Library } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function Literature() {
+export default function Research() {
   const publications = [
     {
       title: "Neural Network Advancements in Cognitive Science",
@@ -42,7 +42,7 @@ export default function Literature() {
       <section className="bg-black section-padding">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Literature</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Research</h1>
             <p className="text-gray-300 max-w-2xl mx-auto">
               Explore our collection of research papers, articles, and publications on neuroscience, technology, and
               their intersection.
