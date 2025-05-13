@@ -16,7 +16,7 @@ export default function Header() {
           <div className="rounded-full bg-accent p-1">
             <div className="rounded-full bg-black p-1 flex items-center justify-center">
               <Image
-                src="/flamelogo.png" // Path to the image in the public folder
+                src="/flame_icon.png" // Path to the image in the public folder
                 alt="TechForward Logo"
                 width={24}
                 height={24}
