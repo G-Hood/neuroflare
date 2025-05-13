@@ -17,7 +17,7 @@ export default function Header() {
             <div className="rounded-full bg-transparent p-1 flex items-center justify-center">
               <Image
                 src="/flame_icon.png" // Path to the image in the public folder
-                alt="NeuroFlare Logo"
+                alt="logo"
                 width={24}
                 height={24}
                 className="soft-glow"
@@ -25,7 +25,11 @@ export default function Header() {
               />
             </div>
           </div>
-          <span className="text-xl font-bold">NeuroFlare</span>
+          <span
+            className="text-xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-purple-500 text-transparent bg-clip-text"
+          >
+            NeuroFlare
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
