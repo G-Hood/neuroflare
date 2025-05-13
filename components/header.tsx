@@ -12,7 +12,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Flame className="h-8 w-8 text-primary soft-glow" />
+          <Flame className="h-8 w-8 text-primary soft-glow opacity-0" />
           <span className="text-xl font-bold rainbow-text">NeuroFlare</span>
         </Link>
 
