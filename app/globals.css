@@ -35,26 +35,27 @@ body {
 .rainbow-text {
   background: linear-gradient(
     to right,
-    #ff0000 /* Red */,
-    #ff8000 /* Orange */,
-    #ffff00 /* Yellow */,
-    #00ff00 /* Green */,
+    #4169e1 /* Royal Blue */,
+    #00bfff /* Deep Sky Blue */,
     #00ffff /* Cyan */,
-    #0000ff /* Blue */,
-    #8000ff /* Violet */
+    #40e0d0 /* Turquoise */,
+    #48d1cc /* Medium Turquoise */,
+    #9370db /* Medium Purple */,
+    #8a2be2 /* Blue Violet */,
+    #4169e1 /* Royal Blue again to create a loop */
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% auto;
-  animation: rainbow 6s linear infinite;
+  background-size: 500% auto;
+  animation: neuro-rainbow 12s linear infinite alternate;
 }
 
-@keyframes rainbow {
+@keyframes neuro-rainbow {
   0% {
     background-position: 0% center;
   }
   100% {
-    background-position: 200% center;
+    background-position: 100% center;
   }
 }
 

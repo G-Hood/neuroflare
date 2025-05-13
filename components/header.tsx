@@ -17,8 +17,8 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="#programs" className="text-sm font-medium hover:text-primary transition-colors">
-            Programs
+          <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
+            Home
           </Link>
           <Link href="/literature" className="text-sm font-medium hover:text-primary transition-colors">
             Literature
@@ -29,10 +29,10 @@ export default function Header() {
           <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
             Products
           </Link>
-          <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
             About
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
           </Link>
           <Button className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 soft-glow">Donate</Button>
@@ -47,11 +47,11 @@ export default function Header() {
         <div className="md:hidden absolute w-full bg-black border-b border-border/40 py-4 animate-fade-in rounded-b-3xl">
           <nav className="container flex flex-col space-y-4">
             <Link
-              href="#programs"
+              href="/"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Programs
+              Home
             </Link>
             <Link
               href="/literature"
@@ -75,14 +75,14 @@ export default function Header() {
               Products
             </Link>
             <Link
-              href="#about"
+              href="/#about"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

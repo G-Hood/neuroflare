@@ -42,8 +42,8 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 gradient-border inline-block pb-1">Main</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#programs" className="text-gray-400 hover:text-primary transition-colors">
-                  Programs
+                <Link href="/" className="text-gray-400 hover:text-primary transition-colors">
+                  Home
                 </Link>
               </li>
               <li>
@@ -62,8 +62,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
-                  Community Workshops
+                <Link href="/#programs" className="text-gray-400 hover:text-primary transition-colors">
+                  Programs
                 </Link>
               </li>
             </ul>
@@ -73,12 +73,12 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 gradient-border inline-block pb-1">About</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="/#about" className="text-gray-400 hover:text-primary transition-colors">
                   Our Mission
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="/#team" className="text-gray-400 hover:text-primary transition-colors">
                   Team
                 </Link>
               </li>
@@ -124,7 +124,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="/#contact" className="text-gray-400 hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </li>
