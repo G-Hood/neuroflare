@@ -4,11 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function Research() {
   const publications = [
     {
-      title: "Neural Network Advancements in Cognitive Science",
+      title: "Accessibility in Alzheimer's Detection",
       description:
-        "A comprehensive review of recent developments in neural networks and their applications in cognitive science research.",
+        "A novel machine learning model which uses multi-modal integration to detect Alzheimer's using routine data.",
       type: "Research Paper",
-      date: "June 2023",
+      date: "June 2025",
       icon: <FileText className="h-8 w-8 text-primary" />,
     },
     {

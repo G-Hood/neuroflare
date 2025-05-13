@@ -5,9 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function Projects() {
   const projects = [
     {
-      title: "Neural Interface Initiative",
+      title: "ReWind",
       description:
-        "Developing non-invasive neural interfaces for improved human-computer interaction and accessibility applications.",
+        "A low-cost smart watch, with a simple interface and widgets for managing executive function.",
       status: "Ongoing",
       progress: 65,
       image: "/placeholder.svg?height=400&width=600",
