@@ -127,25 +127,18 @@ export default function Contact() {
 
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <a href="mailto:example@abc.edu" className="text-gray-300 hover:text-primary transition-colors">
-                    example@abc.edu
+                  <a href="mailto:open.exf@gmail.com" className="text-gray-300 hover:text-primary transition-colors">
+                    open.exf@gmail.com
                   </a>
                 </div>
 
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <a href="tel:+14155550123" className="text-gray-300 hover:text-primary transition-colors">
-                    (XXX)-XXX-XXXX 
+                  <a href="tel:" className="text-gray-300 hover:text-primary transition-colors">
+                    NA
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="modern-card p-6">
-              <h3 className="text-xl font-bold mb-4 gradient-text">Office Hours</h3>
-              <p className="text-gray-300">Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p className="text-gray-300">Saturday: 10:00 AM - 2:00 PM (By appointment)</p>
-              <p className="text-gray-300">Sunday: Closed</p>
             </div>
 
             <div className="modern-card p-6 soft-glow">
