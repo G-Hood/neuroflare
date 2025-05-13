@@ -17,6 +17,7 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [copySuccess, setCopySuccess] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -38,6 +39,16 @@ export default function Contact() {
         setIsSubmitted(false)
       }, 5000)
     }, 1500)
+  }
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("neuroflareorg@gmail.com")
+    setCopySuccess(true)
+
+    // Reset the button text after 2 seconds
+    setTimeout(() => {
+      setCopySuccess(false)
+    }, 2000)
   }
 
   return (
@@ -132,10 +143,12 @@ export default function Contact() {
                     neuroflareorg@gmail.com
                   </a>
                   <Button
-                    onClick={() => navigator.clipboard.writeText("neuroflareorg@gmail.com")}
-                    className="ml-3 bg-primary hover:bg-primary/90 text-sm px-3 py-1 rounded-lg transition-all"
+                    onClick={handleCopy}
+                    className={`ml-3 bg-primary hover:bg-primary/90 text-sm px-3 py-1 rounded-lg transition-all ${
+                      copySuccess ? "bg-green-500" : ""
+                    }`}
                   >
-                    Copy
+                    {copySuccess ? "Copied!" : "Copy"}
                   </Button>
                 </div>
 
