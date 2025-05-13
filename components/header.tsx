@@ -14,13 +14,14 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="rounded-full bg-accent p-1">
-            <div className="rounded-full bg-black p-1 flex items-center justify-center">
+            <div className="rounded-full bg-transparent p-1 flex items-center justify-center">
               <Image
                 src="/flame_icon.png" // Path to the image in the public folder
-                alt="TechForward Logo"
+                alt="NeuroFlare Logo"
                 width={24}
                 height={24}
                 className="soft-glow"
+                style={{ backgroundColor: 'transparent' }} // Ensure the image background is transparent
               />
             </div>
           </div>
