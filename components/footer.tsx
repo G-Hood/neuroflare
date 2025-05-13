@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image" // Import the Image component
 import { Facebook, Twitter, Instagram, Linkedin, Github, Flame } from "lucide-react"
 
 export default function Footer() {
@@ -10,10 +11,16 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="rounded-full bg-accent p-1">
                 <div className="rounded-full bg-black p-1 flex items-center justify-center">
-                  <Flame className="h-6 w-6 text-primary soft-glow" />
+                  <Image
+                    src="/flame_icon.png" // Path to the image in the public folder
+                    alt="NeuroFlare Logo"
+                    width={24}
+                    height={24}
+                    className="soft-glow"
+                  />
                 </div>
               </div>
-              <span className="text-xl font-bold">TechForward</span>
+              <span className="text-xl font-bold">NeuroFlare</span>
             </Link>
             <p className="text-gray-400 mb-4">
               Empowering communities through technology education, access, and opportunity.
@@ -138,7 +145,7 @@ export default function Footer() {
 
         <div className="border-t border-border/40 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} TechForward. All rights reserved.
+            &copy; {new Date().getFullYear()} NeuroFlare. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
