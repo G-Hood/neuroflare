@@ -127,8 +127,8 @@ export default function Contact() {
 
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <a href="mailto:hood@vt.edu" className="text-gray-300 hover:text-primary transition-colors">
-                    edu
+                  <a href="mailto:example@abc.edu" className="text-gray-300 hover:text-primary transition-colors">
+                    example@abc.edu
                   </a>
                 </div>
 
