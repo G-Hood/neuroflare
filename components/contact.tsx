@@ -120,6 +120,7 @@ export default function Contact() {
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
+                    United States
                     <p className="text-gray-300"></p>
                     <p className="text-gray-300"></p>
                   </div>
