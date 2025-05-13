@@ -9,18 +9,18 @@ export default function Projects() {
       description:
         "A low-cost smart watch, with a simple interface and widgets for managing executive function.",
       status: "Ongoing",
-      progress: 65,
+      progress: 10,
       image: "/placeholder.svg?height=400&width=600",
-      icon: <Brain className="h-8 w-8 text-primary" />,
+      icon: <Zap className="h-8 w-8 text-primary" />,
     },
     {
-      title: "Cognitive Enhancement Research",
+      title: "Yggdrasil",
       description:
-        "Investigating safe methods to enhance cognitive function through targeted neurostimulation and training protocols.",
-      status: "Active Research",
-      progress: 42,
+        "A tool for the reframing of education and learning into a more engaging format which allows for curiosity and the mind to wander.",
+      status: "Ongoing",
+      progress: 10,
       image: "/placeholder.svg?height=400&width=600",
-      icon: <Zap className="h-8 w-8 text-accent" />,
+      icon: <Brain className="h-8 w-8 text-accent" />,
     },
     {
       title: "Neuromorphic Computing Platform",
