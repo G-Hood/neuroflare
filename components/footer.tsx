@@ -57,8 +57,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-primary transition-colors">
-                  Products
+                <Link href="/stock" className="text-gray-400 hover:text-primary transition-colors">
+                  Stock
                 </Link>
               </li>
               <li>
@@ -104,9 +104,14 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 gradient-border inline-block pb-1">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
                   Donate
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-primary transition-colors">

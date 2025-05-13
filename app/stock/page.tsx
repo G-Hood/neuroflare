@@ -2,8 +2,8 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function Products() {
-  const products = [
+export default function Stock() {
+  const stock = [
     {
       title: "NeuroSense™ Headband",
       description:
@@ -47,7 +47,7 @@ export default function Products() {
       <section className="bg-black section-padding">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Stock</h1>
             <p className="text-gray-300 max-w-2xl mx-auto">
               Cutting-edge neurotechnology products designed to enhance cognitive performance, monitor brain activity,
               and improve mental wellbeing.
@@ -55,21 +55,21 @@ export default function Products() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product, index) => (
+            {stock.map((stock, index) => (
               <Card
                 key={index}
                 className="modern-card bg-card border-border/50 hover:border-primary/50 transition-all h-full flex flex-col"
               >
                 <div className="relative">
-                  {product.badge && (
+                  {stock.badge && (
                     <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs z-10">
-                      {product.badge}
+                      {stock.badge}
                     </div>
                   )}
                   <div className="p-6 flex justify-center">
                     <Image
-                      src={product.image || "/placeholder.svg"}
-                      alt={product.title}
+                      src={stock.image || "/placeholder.svg"}
+                      alt={stock.title}
                       width={200}
                       height={200}
                       className="object-contain h-48"
@@ -77,13 +77,13 @@ export default function Products() {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle>{product.title}</CardTitle>
-                  <div className="text-xl font-bold text-primary">{product.price}</div>
+                  <CardTitle>{stock.title}</CardTitle>
+                  <div className="text-xl font-bold text-primary">{stock.price}</div>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <CardDescription className="text-gray-400 mb-4">{product.description}</CardDescription>
+                  <CardDescription className="text-gray-400 mb-4">{stock.description}</CardDescription>
                   <ul className="space-y-2">
-                    {product.features.map((feature, idx) => (
+                    {stock.features.map((feature, idx) => (
                       <li key={idx} className="text-sm text-gray-300 flex items-center">
                         <span className="mr-2 text-primary">•</span> {feature}
                       </li>
@@ -104,7 +104,7 @@ export default function Products() {
               href="#"
               className="bg-black px-8 py-3 rounded-full border border-primary/30 hover:border-primary/60 transition-all hover:scale-105 soft-glow"
             >
-              View All Products
+              View All Stock
             </a>
           </div>
         </div>

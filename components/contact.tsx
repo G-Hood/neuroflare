@@ -131,6 +131,12 @@ export default function Contact() {
                   <a href="mailto:neuroflareorg@gmail.com" className="text-gray-300 hover:text-primary transition-colors">
                     neuroflareorg@gmail.com
                   </a>
+                  <Button
+                    onClick={() => navigator.clipboard.writeText("neuroflareorg@gmail.com")}
+                    className="ml-3 bg-primary hover:bg-primary/90 text-sm px-3 py-1 rounded-lg transition-all"
+                  >
+                    Copy
+                  </Button>
                 </div>
 
                 <div className="flex items-center">

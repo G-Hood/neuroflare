@@ -39,13 +39,24 @@ export default function Header() {
           <Link href="/projects" className="text-sm font-medium hover:text-primary transition-colors">
             Projects
           </Link>
-          <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
-            Products
+          <Link href="/stock" className="text-sm font-medium hover:text-primary transition-colors">
+            Stock
           </Link>
           <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
           </Link>
-          <Button className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 soft-glow">Donate</Button>
+          <Button
+            asChild
+            className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 soft-glow"
+          >
+            <a
+              href="https://your-donation-website.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate
+            </a>
+          </Button>
         </nav>
 
         <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
@@ -53,7 +64,7 @@ export default function Header() {
         </button>
       </div>
 
-      {isMenuOpen && (
+      {isMenuOpen && ( 
         <div className="md:hidden absolute w-full bg-black border-b border-border/40 py-4 animate-fade-in rounded-b-3xl">
           <nav className="container flex flex-col space-y-4">
             <Link
@@ -85,11 +96,11 @@ export default function Header() {
               Projects
             </Link>
             <Link
-              href="/products"
+              href="/stock"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Stock
 
             </Link>
             <Link
@@ -99,8 +110,17 @@ export default function Header() {
             >
               Contact
             </Link>
-            <Button className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 w-full soft-glow">
-              Donate
+            <Button
+              asChild
+              className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 w-full soft-glow"
+            >
+              <a
+                href="https://your-donation-website.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate
+              </a>
             </Button>
           </nav>
         </div>
