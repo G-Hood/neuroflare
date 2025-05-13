@@ -47,8 +47,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/literature" className="text-gray-400 hover:text-primary transition-colors">
-                  Literature
+                <Link href="/research" className="text-gray-400 hover:text-primary transition-colors">
+                  Research
                 </Link>
               </li>
               <li>
