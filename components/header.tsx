@@ -52,16 +52,16 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </Link>
+              </Link>
             <Link
-              href="/research"
+              href="/#about"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
-              href="/#contact"
+              href="/research"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -80,9 +80,10 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Products
+
             </Link>
             <Link
-              href="/#about"
+              href="/#contact"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
