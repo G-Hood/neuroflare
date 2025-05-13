@@ -120,22 +120,22 @@ export default function Contact() {
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-300">123 Tech Avenue</p>
-                    <p className="text-gray-300">San Francisco, CA 94107</p>
+                    <p className="text-gray-300"></p>
+                    <p className="text-gray-300"></p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <a href="mailto:info@techforward.org" className="text-gray-300 hover:text-primary transition-colors">
-                    info@techforward.org
+                  <a href="mailto:hood@vt.edu" className="text-gray-300 hover:text-primary transition-colors">
+                    edu
                   </a>
                 </div>
 
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                   <a href="tel:+14155550123" className="text-gray-300 hover:text-primary transition-colors">
-                    (415) 555-0123
+                    (XXX)-XXX-XXXX 
                   </a>
                 </div>
               </div>
