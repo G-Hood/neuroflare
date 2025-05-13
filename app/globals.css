@@ -24,6 +24,7 @@
 body {
   color: rgb(var(--foreground));
   background-color: rgb(var(--background));
+  font-family: serif;
 }
 
 .gradient-text {
