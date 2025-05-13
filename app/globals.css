@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: 255, 255, 255;
+  --background: 0, 0, 0;
+  --primary: 125, 134, 245;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 30, 41, 59;
+  --secondary-foreground: 255, 255, 255;
+  --accent: 147, 112, 219;
+  --accent-foreground: 255, 255, 255;
+  --muted: 51, 65, 85;
+  --muted-foreground: 148, 163, 184;
+  --card: 15, 23, 42;
+  --card-foreground: 255, 255, 255;
+  --border: 51, 65, 85;
+  --input: 51, 65, 85;
+  --ring: 125, 134, 245;
+  --radius: 1rem;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background-color: rgb(var(--background));
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #7d86f5, #9370db, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #7d86f5, #9370db, #c084fc);
+  border-radius: 1rem;
+}
+
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 2rem;
+  }
+}
+
+.modern-card {
+  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(125, 134, 245, 0.15);
+}
+
+.pill-button {
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.pill-button:hover {
+  transform: translateY(-2px);
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.blob-shape {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.soft-glow {
+  box-shadow: 0 0 15px rgba(125, 134, 245, 0.3), 0 0 30px rgba(147, 112, 219, 0.2);
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(125, 134, 245, 0.3), 0 0 20px rgba(147, 112, 219, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(125, 134, 245, 0.5), 0 0 30px rgba(147, 112, 219, 0.3);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite;
+}
