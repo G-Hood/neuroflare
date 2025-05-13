@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image" // Import the Image component
 import { Facebook, Twitter, Instagram, Linkedin, Github, Flame } from "lucide-react"
 
 export default function Footer() {
@@ -9,18 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="rounded-full bg-accent p-1">
-                <div className="rounded-full bg-black p-1 flex items-center justify-center">
-                  <Image
-                    src="/flame_icon.png" // Path to the image in the public folder
-                    alt="NeuroFlare Logo"
-                    width={24}
-                    height={24}
-                    className="soft-glow"
-                  />
-                </div>
-              </div>
-              <span className="text-xl font-bold">NeuroFlare</span>
+              <Flame className="h-8 w-8 text-primary soft-glow" />
+              <span className="text-xl font-bold rainbow-text">NeuroFlare</span>
             </Link>
             <p className="text-gray-400 mb-4">
               Empowering communities through technology education, access, and opportunity.
@@ -50,26 +39,26 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4 gradient-border inline-block pb-1">Programs</h3>
+            <h3 className="text-lg font-bold mb-4 gradient-border inline-block pb-1">Main</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
-                  Code Academy
+                <Link href="#programs" className="text-gray-400 hover:text-primary transition-colors">
+                  Programs
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
-                  Tech Access Initiative
+                <Link href="/literature" className="text-gray-400 hover:text-primary transition-colors">
+                  Literature
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
-                  Mentor Connect
+                <Link href="/projects" className="text-gray-400 hover:text-primary transition-colors">
+                  Projects
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
-                  Innovation Lab
+                <Link href="/products" className="text-gray-400 hover:text-primary transition-colors">
+                  Products
                 </Link>
               </li>
               <li>

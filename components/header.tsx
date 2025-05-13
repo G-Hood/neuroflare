@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image" // Import the Image component
-import { Menu, X } from "lucide-react"
+import { Menu, X, Flame } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
@@ -13,34 +12,25 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="rounded-full bg-accent p-1">
-            <div className="rounded-full bg-transparent p-1 flex items-center justify-center">
-              <Image
-                src="/flame_icon.png" // Path to the image in the public folder
-                alt="logo"
-                width={24}
-                height={24}
-                className="soft-glow"
-                style={{ backgroundColor: 'transparent' }} // Ensure the image background is transparent
-              />
-            </div>
-          </div>
-          <span
-            className="text-xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-purple-500 text-transparent bg-clip-text"
-          >
-            NeuroFlare
-          </span>
+          <Flame className="h-8 w-8 text-primary soft-glow" />
+          <span className="text-xl font-bold rainbow-text">NeuroFlare</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="#programs" className="text-sm font-medium hover:text-primary transition-colors">
             Programs
           </Link>
+          <Link href="/literature" className="text-sm font-medium hover:text-primary transition-colors">
+            Literature
+          </Link>
+          <Link href="/projects" className="text-sm font-medium hover:text-primary transition-colors">
+            Projects
+          </Link>
+          <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
+            Products
+          </Link>
           <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
             About
-          </Link>
-          <Link href="#team" className="text-sm font-medium hover:text-primary transition-colors">
-            Team
           </Link>
           <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
@@ -64,18 +54,32 @@ export default function Header() {
               Programs
             </Link>
             <Link
+              href="/literature"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Literature
+            </Link>
+            <Link
+              href="/projects"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
+            </Link>
+            <Link
+              href="/products"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </Link>
+            <Link
               href="#about"
               className="text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </Link>
-            <Link
-              href="#team"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Team
             </Link>
             <Link
               href="#contact"

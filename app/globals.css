@@ -32,6 +32,32 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.rainbow-text {
+  background: linear-gradient(
+    to right,
+    #ff0000 /* Red */,
+    #ff8000 /* Orange */,
+    #ffff00 /* Yellow */,
+    #00ff00 /* Green */,
+    #00ffff /* Cyan */,
+    #0000ff /* Blue */,
+    #8000ff /* Violet */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: rainbow 6s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .gradient-border {
   position: relative;
 }
