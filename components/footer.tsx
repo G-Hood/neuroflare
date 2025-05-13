@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin, Github, Flame } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="rounded-full bg-accent p-1">
-                <div className="rounded-full bg-black p-1">
-                  <div className="h-6 w-6 rounded-full bg-primary soft-glow" />
+                <div className="rounded-full bg-black p-1 flex items-center justify-center">
+                  <Flame className="h-6 w-6 text-primary soft-glow" />
                 </div>
               </div>
               <span className="text-xl font-bold">TechForward</span>

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Flame } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
@@ -13,11 +13,11 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="rounded-full bg-accent p-1">
-            <div className="rounded-full bg-black p-1">
-              <div className="h-6 w-6 rounded-full bg-primary soft-glow" />
+            <div className="rounded-full bg-black p-1 flex items-center justify-center">
+              <Flame className="h-6 w-6 text-primary soft-glow" />
             </div>
           </div>
-          <span className="text-xl font-bold">NeuroFlare</span>
+          <span className="text-xl font-bold">TechForward</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
