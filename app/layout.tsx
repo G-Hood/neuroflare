@@ -10,10 +10,9 @@ import { Analytics } from '@vercel/analytics/next';
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NeuroFlare | Advancing Neuroscience & Technology",
+  title: "NeuroFlare",
   description:
-    "A non-profit organization dedicated to advancing neuroscience research and technology for the benefit of humanity",
-    generator: 'v0.dev'
+    "An organization dedicated to the development of technology that makes the world more accessible for people with neurolgical disabilities.",
 }
 
 export default function RootLayout({
